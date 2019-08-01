@@ -12,3 +12,13 @@ A summary sensor will indicate if there are any faults, with attributes specifyi
 Since this is based on scraping the website in question as opposed to an official API, this component may break at any time if BT changes the design.
 
 In addition, please let me know if you have any errors reported and ideally send me the HTML of the page in question so I can improve the error handling and picking up of the correct data.
+
+```yaml
+# Example configuration.yaml entry
+sensor:
+  - platform: britishtelecom
+    name: BTService       # Name of sensor
+    host: 01234 567890    # Phone number to monitor status of
+    username: user        # BT username
+    password: pass        # BT password
+```
